@@ -2,7 +2,6 @@ package ejemplopipeline;
 
 /**
  * Hello world!
- *
  */
 public class App 
 {
