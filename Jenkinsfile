@@ -3,19 +3,25 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                sh "./mvnw clean -e"
+                script {
+                        bat  "./mvnw.cmd clean"           
+                }
             }
         }
 
         stage('Compile') {
             steps {
-                sh "./mvnw compile -e"
+                script {
+                        bat  "./mvnw.cmd compile -e"           
+                }
             }
         }
 
         stage('Test') {
             steps {
-                sh "./mvnw test"
+                 script {
+                    bat  "./mvnw.cmd test"           
+                }
             }
         }
     }
