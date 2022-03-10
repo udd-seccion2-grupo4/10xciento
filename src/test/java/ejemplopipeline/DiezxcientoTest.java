@@ -21,6 +21,6 @@ public class DiezxcientoTest {
 
 	@Test
 	public void testSaldoAhorro() throws Exception {
-		assertEquals((int) (ahorro - (ahorro * 0.1)), diezxciento.saldoAhorro());
+		assertEquals(207000000, diezxciento.saldoAhorro(), 0.001);
 	}
 }
